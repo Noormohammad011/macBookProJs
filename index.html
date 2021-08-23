@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacPro</title>
+    <!-- bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mx-auto">
+                <img src="images/mac.png" alt="macBook" class="img-fluid">
+            </div>
+            <div class="col mx-auto">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <h1>
+                            Customize your Blue 23-inch <br>
+                            iMac with Apple M1 chip.
+                        </h1>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Cupertino, California — Apple today announced M1, the most powerful chip it has ever created
+                            and the first chip designed
+                            specifically for the Mac. M1 is optimized for Mac systems in which small size and power
+                            efficiency are critically
+                            important. As a system on a chip (SoC), M1 combines numerous powerful technologies into a
+                            single chip, and features a
+                            unified memory architecture for dramatically improved performance and efficiency.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 mt-5">
+                    <div class="col mb-4">
+                        <h1>
+                            Memory
+                        </h1>
+                    </div>
+                    <div class="col d-flex justify-content-around">
+                        <button id='eightGb-memory' type="button" class="btn btn-outline-info btn-lg">8GB unified
+                            memory</button>
+                        <button id='sixteenGb-memory' type="button" class="btn btn-outline-info btn-lg">16GB unified
+                            memory</button>
+                    </div>
+                </div>
+                <div class="row row-cols-1 mt-5">
+                    <div class="col mb-4">
+                        <h1>
+                            Storage
+                        </h1>
+                    </div>
+                    <div class="col d-flex justify-content-around">
+                        <button id='ssd256-storage' type="button" class="btn btn-outline-info btn-lg">256GB SSD
+                            storage</button>
+                        <button id='ssd512-storage' type="button" class="btn btn-outline-info btn-lg">512GB SSD
+                            storage</button>
+                        <button id='ssd720-storage' type="button" class="btn btn-outline-info btn-lg">720GB SSD
+                            storage</button>
+                    </div>
+                </div>
+                <div class="row row-cols-1 mt-5">
+                    <div class="col mb-4">
+                        <h1>
+                            Choose your delivery option
+                        </h1>
+                    </div>
+                    <div class="col d-flex justify-content-around">
+                        <button id='free-delivary' type="button" class="btn btn-outline-info btn-lg">Friday, Aug 25 FREE
+                            Prime </button>
+                        <button id='withTk-delivary' type="button" class="btn btn-outline-info btn-lg">Friday, Aug 21 FREE
+                            Prime $20</button>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 mt-5">
+                    <div class="col mb-4">
+                        <ul class="list-group fw-bold">
+                            <li class="list-group-item">Best Price : $<span>1299</span> </li>
+                            <li class="list-group-item">Extra Memory Cost : $<span id='memoryCost'>0</span></li>
+                            <li class="list-group-item">Extra Storage Cost : $<span id='storageCost'>0</span></li>
+                            <li class="list-group-item">Delivery charge : $<span id='deliveryCost'>0</span></li>
+                            <hr class="border border-dark">
+                            <li class="list-group-item">Total Price : $<span class='total'>1299</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row row-cols-2 mt-5">
+                    <div class="col">
+                        <div>
+                            <h4 class="fw-bold">Add Promo Code</h4>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id='promoCode' type="text" class="form-control" aria-describedby="button-addon2">
+                            <button id='promoBtn' class="btn btn-outline-danger" type="button"
+                                id="button-addon2">Apply</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr class="border border-dark">
+        <div class="text-center">
+            <h1>
+                Total: $<span id='totalWithPromo' class='total'>1299</span>
+            </h1>
+
+        </div>
+    </div>
+
+
+    <!-- bootstrap js src -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
